@@ -1,0 +1,43 @@
+/* Ajoutez à votre index.css */
+:root {
+  --primary: #667eea;
+  --primary-dark: #5a67d8;
+  --secondary: #48bb78;
+  --bg-light: #f7f9fc;
+  --bg-white: #ffffff;
+  --text-dark: #2d3748;
+  --text-gray: #718096;
+  --border: #e2e8f0;
+  --sent-bg: #667eea;
+  --received-bg: #f1f5f9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg-light);
+}
+
+/* Scrollbar personnalisée */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

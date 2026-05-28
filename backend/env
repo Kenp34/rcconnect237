@@ -1,0 +1,6 @@
+PORT=5001
+MONGODB_URI=mongodb+srv://academicconnect:24035FF@cluster0.1uwbloj.mongodb.net/?appName=Cluster0
+JWT_SECRET=monSuperSecretJWT123456
+JWT_EXPIRE=30d
+NODE_ENV=production
+UPLOAD_PATH=./uploads

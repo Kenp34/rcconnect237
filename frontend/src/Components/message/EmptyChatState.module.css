@@ -1,0 +1,29 @@
+.emptyState {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.content {
+  text-align: center;
+  padding: 40px;
+}
+
+.icon {
+  font-size: 64px;
+  margin-bottom: 24px;
+}
+
+.content h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 12px;
+}
+
+.content p {
+  font-size: 14px;
+  color: #718096;
+}

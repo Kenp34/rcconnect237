@@ -1,0 +1,28 @@
+.messagesContainer {
+  min-height: calc(100vh - 64px);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.messagesWrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  height: calc(100vh - 104px);
+  min-height: 500px;
+}
+
+@media (max-width: 768px) {
+  .messagesContainer {
+    padding: 10px;
+  }
+ 
+  .messagesWrapper {
+    height: calc(100vh - 84px);
+    flex-direction: column;
+  }
+}

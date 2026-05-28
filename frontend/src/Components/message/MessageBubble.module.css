@@ -1,0 +1,122 @@
+.messageBubble {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+  align-items: flex-end;
+}
+
+.own { flex-direction: row-reverse; }
+
+/* Avatar */
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+  color: white;
+  flex-shrink: 0;
+  margin-bottom: 20px;
+}
+
+/* Wrapper */
+.messageWrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 65%;
+}
+
+/* Nom */
+.senderName {
+  font-size: 11px;
+  font-weight: 600;
+  color: #64748B;
+  margin-bottom: 3px;
+  padding-left: 2px;
+}
+
+.department {
+  font-weight: 400;
+  color: #475569;
+}
+
+/* Ligne bulle + menu */
+.bubbleRow {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+  flex-direction: row;
+}
+
+/* Bulles */
+.bubble {
+  padding: 10px 14px;
+  border-radius: 18px;
+  font-size: 13px;
+  line-height: 1.55;
+  word-break: break-word;
+}
+
+.bubbleOther {
+  background: #1E2336;
+  color: #E2E8F0;
+  border-bottom-left-radius: 4px;
+}
+
+.bubbleOwn {
+  background: linear-gradient(135deg, #4F8EF7, #A78BFA);
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+.editedBadge {
+  font-size: 10px;
+  opacity: 0.65;
+  font-style: italic;
+  margin-left: 4px;
+}
+
+/* Supprimé */
+.deletedBubble {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #1E2336;
+  border: 1px dashed #2A2F45;
+  border-radius: 12px;
+  padding: 8px 14px;
+  font-size: 12px;
+  color: #64748B;
+  font-style: italic;
+}
+
+/* Meta */
+.messageMeta {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 3px;
+  padding-left: 2px;
+}
+
+.metaOwn {
+  justify-content: flex-end;
+  padding-right: 2px;
+}
+
+.time {
+  font-size: 10px;
+  color: #475569;
+}
+
+.status {
+  font-size: 10px;
+  color: #94A3B8;
+}
+
+.statusRead {
+  color: #4F8EF7;
+}

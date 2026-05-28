@@ -1,0 +1,202 @@
+.conversationList {
+  width: 300px;
+  min-width: 300px;
+  background: #181C27;
+  border-right: 1px solid #2A2F45;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.header {
+  padding: 16px;
+  border-bottom: 1px solid #2A2F45;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 800;
+  color: #E2E8F0;
+  margin-bottom: 10px;
+}
+
+.searchBox {
+  position: relative;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+}
+
+.searchInput {
+  width: 100%;
+  background: #1E2336;
+  border: 1px solid #2A2F45;
+  border-radius: 10px;
+  padding: 8px 12px 8px 32px;
+  color: #E2E8F0;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.searchInput:focus {
+  border-color: #4F8EF7;
+}
+
+.searchInput::placeholder {
+  color: #64748B;
+}
+
+.conversations {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.conversations::-webkit-scrollbar {
+  width: 3px;
+}
+
+.conversations::-webkit-scrollbar-thumb {
+  background: #2A2F45;
+  border-radius: 3px;
+}
+
+.sectionLabel {
+  font-size: 10px;
+  font-weight: 700;
+  color: #64748B;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 16px 4px;
+}
+
+.conversationItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: background 0.15s;
+  border-bottom: 1px solid rgba(42, 47, 69, 0.5);
+}
+
+.conversationItem:hover {
+  background: #1E2336;
+}
+
+.active {
+  background: rgba(79, 142, 247, 0.08);
+  border-left: 3px solid #4F8EF7;
+}
+
+.avatarWrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.avatarImg {
+
+
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.avatarPlaceholder {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2A2F45, #1E2336);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  color: #E2E8F0;
+}
+
+.unreadDot {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 10px;
+  height: 10px;
+  background: #4F8EF7;
+  border-radius: 50%;
+  border: 2px solid #181C27;
+}
+
+.convInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.convTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+
+.convName {
+  font-size: 13px;
+  font-weight: 600;
+  color: #E2E8F0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.convTime {
+  font-size: 10px;
+  color: #64748B;
+  flex-shrink: 0;
+  margin-left: 4px;
+}
+
+.newBadge {
+  font-size: 10px;
+  font-weight: 700;
+  background: rgba(79, 142, 247, 0.15);
+  color: #4F8EF7;
+  padding: 2px 6px;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.lastMessage {
+  font-size: 12px;
+  color: #64748B;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: #64748B;
+}
+
+.emptyIcon {
+  font-size: 36px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.empty p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: #94A3B8;
+}
+
+.empty small {
+  font-size: 12px;
+}

@@ -1,0 +1,59 @@
+.inputContainer {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  padding: 14px 20px;
+  background: #181C27;
+  border-top: 1px solid #2A2F45;
+}
+
+.textarea {
+  flex: 1;
+  background: #1E2336;
+  border: 1px solid #2A2F45;
+  border-radius: 14px;
+  padding: 10px 14px;
+  color: #E2E8F0;
+  font-size: 13px;
+  outline: none;
+  resize: none;
+  max-height: 120px;
+  overflow-y: auto;
+  line-height: 1.5;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.textarea:focus {
+  border-color: #4F8EF7;
+}
+
+.textarea::placeholder {
+  color: #64748B;
+}
+
+.sendButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+  transition: opacity 0.2s;
+  background: linear-gradient(135deg, #4F8EF7, #A78BFA);
+}
+
+.sendButton:hover {
+  opacity: 0.85;
+}
+
+.sendButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

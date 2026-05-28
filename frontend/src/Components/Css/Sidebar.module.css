@@ -1,0 +1,137 @@
+.sidebar {
+  width: 260px;
+  background: rgb(65, 63, 63);
+  border-right: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
+  overflow-y: auto;
+}
+
+.menuSection, .groupsSection {
+  padding: 0 16px;
+  margin-bottom: 32px;
+}
+
+.sectionTitle {
+  font-size: 11px;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  padding-left: 12px;
+}
+
+.menuList, .groupsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #475569;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+  margin-bottom: 4px;
+}
+
+.menuLink:hover {
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+.menuLink.active {
+  background: #eff6ff;
+  color: #4F8EF7;
+}
+
+.menuIcon {
+  font-size: 18px;
+  width: 24px;
+}
+
+.menuBadge {
+  margin-left: auto;
+  background: #4F8EF7;
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 20px;
+}
+
+.groupItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #475569;
+  font-size: 14px;
+}
+
+.groupItem:hover {
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+.groupDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+}
+
+.bottomSection {
+  margin-top: auto;
+  padding: 16px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.bottomLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #475569;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  transition: all 0.2s;
+}
+
+.bottomLink:hover {
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+.logoutButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: transparent;
+  border: none;
+  color: #ef4444;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.logoutButton:hover {
+  background: #fef2f2;
+}
