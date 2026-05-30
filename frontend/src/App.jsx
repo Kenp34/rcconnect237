@@ -5,7 +5,7 @@ import Layout from './Components/Layout';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Feed from './pages/Feed';
-import Profile from './pages/Profile';
+import Profile from './pages/profile';
 import Message from './pages/Message';
 import Directory from './pages/Directory';
 import Group from './pages/Group';
