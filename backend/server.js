@@ -48,7 +48,7 @@ require('./socket/index')(io);
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => {
     server.listen(5001, () => {
-      console.log('✅ Serveur démarré sur http://localhost:5001');
+      console.log('✅ Serveur démarré sur http://localhost:5001',MONGODB_URI);
     });
   })
   .catch(err => console.error('❌ Erreur MongoDB:', err));
