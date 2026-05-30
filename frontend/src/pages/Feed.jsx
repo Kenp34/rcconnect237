@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import PostCard from '../components/PostCard';
-import CreatePost from '../components/CreatePost';
+import PostCard from '../Components/PostCard';
+import CreatePost from '../Components/CreatePost';
 import styles from './feed.module.css'
 
 const API = import.meta.env.VITE_API_URL || 'http://localhost:5001/api';
