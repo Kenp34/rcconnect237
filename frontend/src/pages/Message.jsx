@@ -2,8 +2,8 @@ import { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import { useAuth } from '../context/AuthContext';
 import { useSocket } from '../hooks/useSocket';
-import ConversationList from '../components/message/ConversationList';
-import ChatArea from '../components/message/ChatArea';
+import ConversationList from '../Components/message/ConversationList';
+import ChatArea from '../Components/message/ChatArea';
 import styles from './message.module.css';
 
 const API = import.meta.env.VITE_API_URL || 'http://localhost:5001/api';
