@@ -12,13 +12,21 @@ const server = http.createServer(app);
 // Configuration Socket.io
 const io = new Server(server, {
   cors: {
-    origin: process.env.CLIENT_URL || 'http://localhost:5173',
+    origin: process.env.CLIENT_URL || 'https://rcconnect237-pv5i.vercel.app/',
     methods: ['GET', 'POST']
   }
 });
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin:process.env.CLIENT_URL || 'https://rcconnect237-pv5i.vercel.app/' ,
+  credentials:true
+}));
+
+app.get('/',(req,res) =>{
+   res.json({message: 'RCconnect API'})
+}
+
 app.use(express.json());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
