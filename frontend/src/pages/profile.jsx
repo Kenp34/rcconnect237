@@ -2,7 +2,7 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useAuth } from '../context/AuthContext';
-import PostCard from '../components/PostCard';
+import PostCard from '../Components/PostCard';
 
 const API = import.meta.env.VITE_API_URL || 'http://localhost:5001/api';
 const BASE = import.meta.env.VITE_API_URL?.replace('/api', '') || 'http://localhost:5001';
