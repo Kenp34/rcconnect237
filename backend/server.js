@@ -24,8 +24,8 @@ app.use(cors({
 }));
 
 app.get('/',(req,res) =>{
-   res.json({message: 'RCconnect API'})
-}
+   res.json({message: 'RCconnect API'});
+})
 
 app.use(express.json());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
