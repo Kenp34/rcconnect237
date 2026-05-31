@@ -12,14 +12,14 @@ const server = http.createServer(app);
 // Configuration Socket.io
 const io = new Server(server, {
   cors: {
-    origin: process.env.CLIENT_URL || 'https://rcconnect237-pv5i.vercel.app/',
+    origin: process.env.CLIENT_URL || 'https://rcconnect237-pv5i.vercel.app',
     methods: ['GET', 'POST']
   }
 });
 
 // Middleware
 app.use(cors({
-  origin:process.env.CLIENT_URL || 'https://rcconnect237-pv5i.vercel.app/' ,
+  origin:process.env.CLIENT_URL || 'https://rcconnect237-pv5i.vercel.app' ,
   credentials:true
 }));
 
